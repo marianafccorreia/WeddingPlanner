@@ -1,0 +1,285 @@
+/* Importa as fontes no index.html:
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+*/
+
+/*------------------------------ Reset básico------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------------------------- Corpo do site-------------------------------- */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #faf7f5;
+  color: #3e3e3e;
+  line-height: 1.6;
+}
+
+/*--------------------------------Cabeçalho ---------------------------------*/
+header {
+  background: #4b2e2e; /* vinho escuro */
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: #f5e9dc; /* bege claro */
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f5e9dc;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #f5e9dc;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4af37; /* dourado */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*--------------------------------- Secção Hero -----------------------------*/
+#hero {
+  background: url('imagens/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  background-blend-mode: multiply;
+  background-color: rgba(75, 46, 46, 0.6);
+  font-family: 'Playfair Display', serif;
+}
+
+#hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* -------------------------Secções principais------------------------------ */
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #4b2e2e;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* ------------------------------------Galeria---------------------------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.01);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.overlay-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: #fff;
+}
+
+.overlay-caption h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.overlay-caption p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.overlay-caption {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay-caption {
+  opacity: 1;
+}
+
+
+/* ---------------------------Lista de serviços----------------------------- */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-item {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4b2e2e;
+  transition: color 0.3s ease;
+}
+
+.service-item:hover {
+  color: #d4af37; /* dourado */
+}
+
+/*---------------------Descrição do serviço (aparece ao clicar)------------- */
+.service-desc {
+  margin: 0.5rem 0 1rem 1rem;
+  padding: 0.8rem;
+  color: #4b2e2e;/*cor das letras*/
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Testemunhos */
+blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #d4af37; /* dourado */
+  color: #4b2e2e;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Blog */
+#blog article {
+  margin-bottom: 2rem;
+}
+
+#blog h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #d4af37; /* dourado */
+  outline: none;
+}
+
+/* Botão com estilo moderno */
+form button {
+  background-color: transparent;
+  border: 2px solid #d4af37;
+  color: #4b2e2e;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+form button:hover {
+  background-color: #d4af37;
+  color: #fff;
+}
+
+/*--------------------------------- Rodapé ----------------------------*/
+footer {
+  background-color:#4b2e2e ;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color:  #f5e0d8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+  color: #d4af37; /* dourado */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/*------------------------------- Animações suaves---------------------------- */
+section, header, footer {
+  transition: all 0.3s ease-in-out;
+}
+
+/* ----------------------------Responsividade----------------------------- */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}

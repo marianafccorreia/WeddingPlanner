@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casamentos de Sonho</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Casamentos de Sonho</h1>
+    <nav>
+      <a href="#weddings">Portfólio</a>
+      <a href="#services">Serviços</a>
+      <a href="#testimonials">Testemunhos</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="hero" data-aos="fade-in">
+    <h2>Planeamos o teu dia perfeito</h2>
+    <p>Romântico. Elegante. Inesquecível.</p>
+  </section>
+
+<section id="weddings" data-aos="fade-up">
+  <h3>Casamentos Realizados</h3>
+  <div class="gallery">
+    <figure class="gallery-item" style="flex: 1 1 300px; max-width: 400px;">
+      <img src="imagens/wedding1.jpg" alt="Casamento 1" style="width: 100%; display: block;" />
+      <figcaption class="overlay-caption">
+        <h2>Casamento da Sofia & Miguel</h2>
+        <p>Um dia mágico no Douro</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item" style="flex: 1 1 300px; max-width: 400px;">
+      <img src="imagens/wedding2.jpg" alt="Casamento 2" style="width: 100%; display: block;" />
+      <figcaption class="overlay-caption">
+        <h2>Casamento da Rita & Tiago</h2>
+        <p>Beleza clássica em Sintra</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+  <section id="services" data-aos="fade-up">
+  <h3>Os Nossos Serviços</h3>
+  <ul>
+    <li class="service-item" data-info="planeamento">Planeamento completo</li>
+    <li class="service-item" data-info="decoracao">Decoração personalizada</li>
+    <li class="service-item" data-info="fornecedores">Gestão de fornecedores</li>
+  </ul>
+</section>
+
+  <section id="testimonials" data-aos="fade-up">
+    <h3>Testemunhos</h3>
+    <blockquote>"Foi mágico! Obrigada por tudo!" – Ana & João</blockquote>
+    <blockquote>"Superou as nossas expectativas!" – Marta & Luís</blockquote>
+  </section>
+
+  <section id="blog" data-aos="fade-up">
+    <h3>Blog</h3>
+    <div id="blog-posts"></div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h3>Contacto</h3>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="O teu nome" required />
+      <input type="email" name="email" placeholder="O teu email" required />
+      <textarea name="message" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>Segue-nos:</p>
+    <a href="#">Instagram</a> |
+    <a href="#">Facebook</a>
+    <p>&copy; 2025 Wedding Planner</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
